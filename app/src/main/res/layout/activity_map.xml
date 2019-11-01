@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_header"
+        android:background="@color/primary">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/height_header"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_1x"
+            android:src="@drawable/ic_header_back" />
+
+        <com.app.hotgo.widget.MyTextView
+            android:id="@+id/lblTitle"
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_centerInParent="true"
+            android:shadowDx="-2"
+            android:shadowDy="-2"
+            android:shadowRadius="2"
+            android:textStyle="bold"
+            android:text="@string/maps"
+            android:textColor="@color/text_color_primary"
+            android:textSize="22sp" />
+
+        <com.app.hotgo.widget.MyTextView
+            android:id="@+id/btnSaveLatlong"
+            android:text="@string/save"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_2x"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_xlarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/fragMaps"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

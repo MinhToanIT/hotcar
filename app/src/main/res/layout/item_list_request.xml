@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/img_size_passeger">
+
+            <ImageView
+                android:id="@+id/iv_passenger"
+                android:layout_width="@dimen/img_size_passeger"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_border_violet"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small">
+
+                <com.app.hotgo.widget.MyTextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/bg_menu" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.app.hotgo.widget.MyTextView
+                        android:id="@+id/tv_phone_number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="@color/bg_menu" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:src="@drawable/ic_star_yellow" />
+
+                        <com.app.hotgo.widget.MyTextView
+                            android:id="@+id/tv_start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_1x"
+                            android:layout_weight="1"
+                            android:text="5.0(16)"
+                            android:textColor="@color/bg_menu" />
+                    </LinearLayout>
+
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="@style/userRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_tiny"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.app.hotgo.widget.MyTextView
+                style="@style/text_14_white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="@string/lbl_shop"
+                android:textStyle="bold" />
+
+            <com.app.hotgo.widget.MyTextView
+                android:id="@+id/tv_shop_name"
+                style="@style/text_14_white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/iv_call"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:src="@drawable/ic_call" />
+
+            <ImageView
+                android:id="@+id/iv_sms"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginLeft="@dimen/dimen_1x"
+                android:src="@drawable/ic_sms" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_tiny"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.app.hotgo.widget.MyTextView
+                style="@style/text_14_white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="@string/product"
+                android:textStyle="bold" />
+
+            <com.app.hotgo.widget.MyTextView
+                android:id="@+id/tv_product_name"
+                style="@style/text_14_white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3"
+                android:gravity="left"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_tiny"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.app.hotgo.widget.MyTextView
+                style="@style/text_14_white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text=""
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3"
+                android:orientation="horizontal">
+
+                <com.app.hotgo.widget.MyTextView
+                    android:id="@+id/tv_quantity"
+                    style="@style/text_14_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="x1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_large" />
+
+                <com.app.hotgo.widget.MyTextView
+                    android:id="@+id/tv_price"
+                    style="@style/text_14_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_2x"
+                    android:gravity="left"
+                    android:text="$330"
+                    android:textStyle="bold"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_tiny"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.app.hotgo.widget.MyTextView
+                style="@style/text_14_white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="@string/size"
+                android:textStyle="bold" />
+
+            <com.app.hotgo.widget.MyTextView
+                android:id="@+id/tv_size"
+                style="@style/text_14_white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3"
+                android:gravity="left"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_tiny"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:weightSum="3">
+
+            <com.app.hotgo.widget.MyTextView
+                style="@style/text_14_white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="@string/lbl_address"
+                android:textStyle="bold" />
+
+            <com.app.hotgo.widget.MyTextView
+                android:id="@+id/tv_address"
+                style="@style/text_14_white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3"
+                android:gravity="left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_tiny"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:weightSum="3">
+
+            <com.app.hotgo.widget.MyTextView
+                style="@style/text_14_white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="@string/lblDestination"
+                android:textStyle="bold" />
+
+            <com.app.hotgo.widget.MyTextView
+                android:id="@+id/tv_destination"
+                style="@style/text_14_white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3"
+                android:gravity="left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_tiny"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:weightSum="3">
+
+            <com.app.hotgo.widget.MyTextView
+                style="@style/text_14_white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="@string/lbl_shipping"
+                android:textStyle="bold" />
+
+            <com.app.hotgo.widget.MyTextView
+                android:id="@+id/tv_shipping_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/orange"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:paddingLeft="@dimen/dimen_2x"
+                android:paddingTop="@dimen/dimen_05x"
+                android:paddingRight="@dimen/dimen_2x"
+                android:paddingBottom="@dimen/dimen_05x"
+                android:text="$20" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:src="@drawable/ic_delete" />
+</FrameLayout>

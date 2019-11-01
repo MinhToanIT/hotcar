@@ -1,0 +1,4 @@
+# Referenced at C:\Users\Lab06\Downloads\hotcar3110afternon\hotcar\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:43
+-keep class android.support.v4.app.CoreComponentFactory { <init>(); }
+# Referenced at C:\Users\Lab06\Downloads\hotcar3110afternon\hotcar\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:43
+-keep class com.app.hotgo.volleynetwork.ControllerRequest { <init>(); }

@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultSearchActvity">
+
+
+    <fragment
+        android:id="@+id/fragmentProfileFragment"
+        android:name="com.app.hotgo.fragment.ProfileFragment"
+        style="@style/Layout.FillWidthHeight" />
+
+    <!--
+         <fragment
+        android:id="@+id/fragmentTripHistoryFragment"
+        android:name="com.pt.fragment.TripHistoryFragment"
+        style="@style/Layout.FillWidthHeight" />
+    -->
+
+    <fragment
+        android:id="@+id/fragmentHistoryFragment"
+        android:name="com.app.hotgo.fragment.HistoryFragment"
+        style="@style/Layout.FillWidthHeight" />
+
+    <fragment
+        android:id="@+id/fragmentPassenger1"
+        android:name="com.app.hotgo.fragment.PassengerPage1Fragment"
+        style="@style/Layout.FillWidthHeight" />
+
+    <fragment
+        android:id="@+id/fragmentHelpFragment"
+        android:name="com.app.hotgo.fragment.HelpFragment"
+        style="@style/Layout.FillWidthHeight" />
+
+    <!--<fragment-->
+        <!--android:id="@+id/fragmentRegisterFragment"-->
+        <!--android:name="com.app.hotgo.fragment.RegisterFragment"-->
+        <!--style="@style/Layout.FillWidthHeight" />-->
+
+    <fragment
+        android:id="@+id/fragmentRegisterAsShopFragment"
+        android:name="com.app.hotgo.fragment.RegisterAsShopFragment"
+        style="@style/Layout.FillWidthHeight" />
+
+    <fragment
+        android:id="@+id/fragmentRegisterAsShipperFragment"
+        android:name="com.app.hotgo.fragment.RegisterAsShipperFragment"
+        style="@style/Layout.FillWidthHeight" />
+
+    <fragment
+        android:id="@+id/fragmentMyProduct"
+        android:name="com.app.hotgo.fragment.MyProductFragment"
+        style="@style/Layout.FillWidthHeight" />
+
+    <fragment
+        android:id="@+id/fragmentWaitDriverConfirmFragment"
+        android:name="com.app.hotgo.fragment.WaitDriverConfirmFragment"
+        style="@style/Layout.FillWidthHeight" />
+
+    <fragment
+        android:id="@+id/fragmentBeforeOnlineFragment"
+        android:name="com.app.hotgo.fragment.BeforeOnlineFragment"
+        style="@style/Layout.FillWidthHeight" />
+
+    <fragment
+        android:id="@+id/fragmentPaymentFragment"
+        android:name="com.app.hotgo.fragment.PaymentFragment"
+        style="@style/Layout.FillWidthHeight" />
+
+    <fragment
+        android:id="@+id/fragmentShareFragment"
+        android:name="com.app.hotgo.fragment.ShareFragment"
+        style="@style/Layout.FillWidthHeight" />
+
+    <fragment
+        android:id="@+id/fragmentChangePassword"
+        android:name="com.app.hotgo.fragment.ChangePasswordFragment"
+        style="@style/Layout.FillWidthHeight" />
+
+</RelativeLayout>

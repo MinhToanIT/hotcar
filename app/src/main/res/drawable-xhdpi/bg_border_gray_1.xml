@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- solids that simulate shadow !-->
+    <!--<item>-->
+        <!--<shape>-->
+            <!--<corners android:radius="@dimen/dimen_05x"></corners>-->
+            <!--<solid android:color="#0D000000" />-->
+            <!--<padding android:top="0dp" android:right="1.2dp" android:bottom="1.2dp" android:left="0dp" />-->
+        <!--</shape>-->
+    <!--</item>-->
+
+    <!--<item>-->
+        <!--<shape>-->
+            <!--<corners android:radius="@dimen/dimen_05x"></corners>-->
+            <!--<solid android:color="#0D000000" />-->
+            <!--<padding android:top="0dp" android:right="1dp" android:bottom="1dp" android:left="0dp" />-->
+        <!--</shape>-->
+    <!--</item>-->
+
+    <!--<item>-->
+        <!--<shape>-->
+            <!--<corners android:radius="@dimen/dimen_05x"></corners>-->
+            <!--<solid android:color="#0D000000" />-->
+            <!--<padding android:top="0dp" android:right="0.7dp" android:bottom="0.7dp" android:left="0dp" />-->
+        <!--</shape>-->
+    <!--</item>-->
+
+    <!--&lt;!&ndash;<item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<shape>&ndash;&gt;-->
+    <!--&lt;!&ndash;<corners android:radius="@dimen/dimen_05x"></corners>&ndash;&gt;-->
+    <!--&lt;!&ndash;<solid android:color="#15000000" />&ndash;&gt;-->
+    <!--&lt;!&ndash;<padding android:top="0dp" android:right="1dp" android:bottom="1dp" android:left="0dp" />&ndash;&gt;-->
+    <!--&lt;!&ndash;</shape>&ndash;&gt;-->
+    <!--&lt;!&ndash;</item>&ndash;&gt;-->
+
+    <!--<item>-->
+        <!--<shape>-->
+            <!--<corners android:radius="@dimen/dimen_05x"></corners>-->
+            <!--<solid android:color="#10000000" />-->
+            <!--<padding android:top="0dp" android:right="1.5dp" android:bottom="1.5dp" android:left="0dp" />-->
+        <!--</shape>-->
+    <!--</item>-->
+
+    <!-- main background !-->
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <solid android:color="#ebebeb" />
+            <corners android:radius="@dimen/dimen_05x" />
+        </shape>
+    </item>
+
+</layer-list>

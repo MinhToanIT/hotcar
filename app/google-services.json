@@ -1,0 +1,169 @@
+{
+  "project_info": {
+    "project_number": "446778695965",
+    "firebase_url": "https://taxinear-c804e.firebaseio.com",
+    "project_id": "taxinear-c804e",
+    "storage_bucket": "taxinear-c804e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446778695965:android:b22bd18eae78341b",
+        "android_client_info": {
+          "package_name": "com.hcpt.taxinear"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446778695965-mrjtt9hs6it22ggokv9hblbgghuqj9oe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hcpt.taxinear",
+            "certificate_hash": "861e4e249f80302e6d0dfca617e4579d3e03bed5"
+          }
+        },
+        {
+          "client_id": "446778695965-o1rpo3na9es43hl8pts6g13fkpvrq6c1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hcpt.taxinear",
+            "certificate_hash": "63ec37e810d4ed768b14f60de17e435deccbc7f0"
+          }
+        },
+        {
+          "client_id": "446778695965-v26igd1bbl7jcd6fvd72a83tcm5nlgri.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hcpt.taxinear",
+            "certificate_hash": "9ae51cf374358d07e78855ed3ab53b2682f27e6e"
+          }
+        },
+        {
+          "client_id": "446778695965-22r7n80aaq19icg0kv0ehcu71kapf4j4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hcpt.taxinear",
+            "certificate_hash": "a597ba4c93adacbfee178ce458dfb473dfcc0156"
+          }
+        },
+        {
+          "client_id": "446778695965-bua9lqlucun6sb22pb387sb2oqi935p1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hcpt.taxinear",
+            "certificate_hash": "1da4f8c79ed56a9a3caf2dde882337876796ae11"
+          }
+        },
+        {
+          "client_id": "446778695965-02jdii1eginlbisq0q7quh7bftcu7eb3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVdmMOluQwBPdp2x3huwB5qxt7IFFhvic"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446778695965-ooeihjb73d17at7j9p2bqp8hd6nsqtlu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "hcpt.taxinear"
+              }
+            },
+            {
+              "client_id": "446778695965-02jdii1eginlbisq0q7quh7bftcu7eb3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446778695965:android:f8d69bd2b2e222aa",
+        "android_client_info": {
+          "package_name": "com.app.hotgo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446778695965-715fjk89jncbj3rm2ksuhpe1fsv7ghk4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.hotgo",
+            "certificate_hash": "9bd76b0206ac39c6a8ea9242672009e39ff2c142"
+          }
+        },
+        {
+          "client_id": "446778695965-u1k5shlr06r84vji10ksf732qkl1nsrk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.hotgo",
+            "certificate_hash": "8d698e7e4958db060f83076e62d60289c6f8d679"
+          }
+        },
+        {
+          "client_id": "446778695965-p32bovh3qd5p0hffpt7eg08p71tgds1b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.hotgo",
+            "certificate_hash": "74522420763eaa8c20f52e5449f017ed9174820e"
+          }
+        },
+        {
+          "client_id": "446778695965-v6j6kjaj8b6vmlbkarf0hv49tj1hbh8s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.hotgo",
+            "certificate_hash": "9ae51cf374358d07e78855ed3ab53b2682f27e6e"
+          }
+        },
+        {
+          "client_id": "446778695965-02jdii1eginlbisq0q7quh7bftcu7eb3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVdmMOluQwBPdp2x3huwB5qxt7IFFhvic"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446778695965-ooeihjb73d17at7j9p2bqp8hd6nsqtlu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "hcpt.taxinear"
+              }
+            },
+            {
+              "client_id": "446778695965-02jdii1eginlbisq0q7quh7bftcu7eb3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

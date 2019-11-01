@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ChooseExtraLocationActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_xlargex"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:src="@drawable/ic_header_back"
+            android:text="@string/ic_back" />
+
+        <com.app.hotgo.widget.MyTextView
+            android:id="@+id/lblTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_large"
+            android:layout_toLeftOf="@id/tv_save"
+            android:layout_toRightOf="@+id/btnBack"
+            android:gravity="center"
+            android:text="@string/maps"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold" />
+
+        <com.app.hotgo.widget.MyTextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_small"
+            android:text="@string/save"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_large" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.ChooseExtraLocationActivity">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".activities.ChooseExtraLocationActivity"></fragment>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_1x"
+            android:layout_marginTop="@dimen/margin_vertical"
+            android:layout_marginRight="@dimen/dimen_1x"
+            app:cardCornerRadius="@dimen/dimen_05x"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_border_white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="8dp"
+                    android:orientation="horizontal">
+
+                    <com.app.hotgo.widget.MyTextView
+                        android:id="@+id/lbl_From"
+                        android:layout_width="@dimen/height_pickup"
+                        android:layout_height="@dimen/height_pickup"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="C"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/txtFrom"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_header"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_border_white"
+                        android:gravity="center"
+                        android:hint="@string/search_location"
+                        android:imeOptions="actionSearch"
+                        android:paddingLeft="@dimen/padding_vertical"
+                        android:textColor="@color/blue"
+                        android:textColorHint="@color/blue"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <ImageView
+                        android:id="@+id/btnStart"
+                        android:layout_width="@dimen/height_header"
+                        android:layout_height="@dimen/height_header"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_radius_right_top_bottom"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_crosshairs_grey"
+                        android:textColor="@color/blue" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </FrameLayout>
+</LinearLayout>

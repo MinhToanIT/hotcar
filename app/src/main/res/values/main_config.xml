@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hot Go</string>
+
+
+    <string name="web_service_config">http://bestapp.site/graduationproject/api/</string>
+
+    <string name="facebook_id">334923763587011</string>
+
+
+ 
+    <string name="key_map">AIzaSyBcMRS-mBh4aukh7dMy_liYSFpOS4AC0T4</string>
+
+    <string name="google_app_id_map">252300682680</string>
+
+    <string name="stripe_publishable_key">pk_test_PHpVnGDg1yo77vX8orbT4arV</string>
+
+</resources>

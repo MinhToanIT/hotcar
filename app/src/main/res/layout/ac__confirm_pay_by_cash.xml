@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.app.hotgo.widget.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/lbl_confirm"
+            android:textAllCaps="true"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_header" />
+
+        <com.app.hotgo.widget.MyTextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_horizontal_large"
+            android:gravity="center_horizontal"
+            android:text="@string/question"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_xlarge" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_horizontal"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_horizontal_large"
+                android:orientation="horizontal">
+
+                <com.app.hotgo.widget.MyTextView
+                    android:id="@+id/btnCancel"
+                    style="@style/button"
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/margin_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_border_gray"
+                    android:gravity="center"
+                    android:text="@string/no_i_didn_t"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+
+                <com.app.hotgo.widget.MyTextView
+                    android:id="@+id/btnConfirm"
+                    style="@style/button"
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/margin_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_border_violet"
+                    android:gravity="center"
+                    android:text="@string/yes_i_did"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

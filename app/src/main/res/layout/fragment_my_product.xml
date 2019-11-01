@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/primary"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:paddingBottom="@dimen/space_small">
+
+        <com.app.hotgo.widget.CircleImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/profile_avartar_size"
+            android:layout_height="@dimen/profile_avartar_size"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/profile_avartar_margin_top"
+            android:contentDescription="@string/content_description"
+            android:scaleType="centerCrop"
+            app:border_color="@color/white"
+            app:border_width="2dp" />
+
+        <com.app.hotgo.widget.TextViewFontAwesome
+            android:id="@+id/btnMenu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/ic_menu"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/space_normal" />
+
+        <com.app.hotgo.widget.MyTextView
+            android:id="@+id/lblTitle"
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_header"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_avatar"
+            android:orientation="vertical">
+
+            <com.app.hotgo.widget.MyTextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_tiny"
+                android:layout_marginBottom="@dimen/space_nano"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="@string/user_name"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:id="@+id/ratingBar"
+                style="@style/Widget.MaterialRatingBar.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/space_tiny"
+                android:isIndicator="true"
+                android:minHeight="@dimen/dp_24"
+                android:rating="0"
+                app:mrb_fillBackgroundStars="false"
+                app:mrb_progressBackgroundTint="@color/yellow_dark"
+                app:mrb_progressTint="@color/yellow_dark"
+                app:mrb_secondaryProgressTint="@color/yellow_dark" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_new_product"
+        android:layout_marginTop="@dimen/dimen_1x"
+        android:layout_marginBottom="@dimen/dimen_1x"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginRight="@dimen/dp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_border_green"
+        android:text="@string/new_product"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_manager_product"
+        android:layout_marginTop="@dimen/dimen_1x"
+        android:layout_marginBottom="@dimen/dimen_1x"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginRight="@dimen/dp_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_border_green"
+        android:text="@string/manager_product"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+</LinearLayout>

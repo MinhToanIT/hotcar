@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_header_back"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_tiny"
+                    android:layout_marginTop="@dimen/space_large"
+                    android:gravity="center">
+
+                    <com.app.hotgo.widget.TextViewFontAwesome style="@style/title_circle_full" />
+
+                    <com.app.hotgo.widget.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lbl_request_by_passenger"
+                        android:textColor="@color/text_color_primary"
+                        android:textSize="@dimen/text_size_title" />
+
+                    <com.app.hotgo.widget.TextViewFontAwesome style="@style/title_circle" />
+
+                    <com.app.hotgo.widget.TextViewFontAwesome style="@style/title_circle" />
+
+                    <com.app.hotgo.widget.TextViewFontAwesome style="@style/title_circle" />
+
+                    <com.app.hotgo.widget.TextViewFontAwesome style="@style/title_circle" />
+                </LinearLayout>
+
+                <com.app.hotgo.widget.MyTextView
+                    android:id="@+id/tv_number_request"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/lbl_waiting_for_request"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_large" />
+
+                <Button
+                    android:id="@+id/btnOffline"
+                    android:layout_width="@dimen/btn_width"
+                    android:layout_height="@dimen/height_header"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/space_small"
+                    android:background="@drawable/bg_border_gray_with_shadow"
+                    android:gravity="center"
+                    android:text="@string/lbl_offline"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_height="wrap_content">
+
+                <ListView
+                    android:id="@+id/lvRequestPassenger"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/space_small"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding_horizontal"
+                    android:paddingRight="@dimen/padding_horizontal"></ListView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+
+
+        <com.app.hotgo.widget.MyTextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/no_data"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:paddingBottom="@dimen/space_small">
+
+        <com.app.hotgo.widget.CircleImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="@dimen/profile_avartar_size"
+            android:layout_height="@dimen/profile_avartar_size"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/profile_avartar_margin_top"
+            android:contentDescription="@string/content_description"
+            android:scaleType="centerCrop"
+            app:border_color="@color/white"
+            app:border_width="2dp" />
+
+        <com.app.hotgo.widget.TextViewFontAwesome
+            android:id="@+id/btnMenu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/ic_menu"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/space_normal" />
+
+        <ImageView
+            android:id="@+id/btn_edit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:padding="@dimen/dp_14"
+            android:src="@drawable/ic_profile_edit"
+            android:text="@string/ic_edit"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/space_large" />
+
+        <com.app.hotgo.widget.MyTextView
+            android:id="@+id/lblTitle"
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_header"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgProfile"
+            android:orientation="vertical">
+
+            <com.app.hotgo.widget.MyTextView
+                android:id="@+id/lblNameDriver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_tiny"
+                android:layout_marginBottom="@dimen/space_nano"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:text="@string/user_name"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_size_xlarge"
+                android:textStyle="bold" />
+
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:id="@+id/ratingBar"
+                style="@style/Widget.MaterialRatingBar.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/space_tiny"
+                android:isIndicator="true"
+                android:minHeight="@dimen/dp_24"
+                android:rating="3"
+                app:mrb_fillBackgroundStars="false"
+                app:mrb_progressBackgroundTint="@color/yellow_dark"
+                app:mrb_progressTint="@color/yellow_dark"
+                app:mrb_secondaryProgressTint="@color/yellow_dark" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/space_small">
+
+            <LinearLayout
+                android:id="@+id/llPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_small"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/space_small"
+                android:paddingEnd="@dimen/space_small"
+                android:paddingBottom="@dimen/space_small">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_profile_phone" />
+
+                <com.app.hotgo.widget.TextViewFontAwesome
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/ic_phone"
+                    android:textColor="@color/bg_menu"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/space_small"
+                    android:weightSum="10">
+
+
+                    <com.app.hotgo.widget.MyTextView
+                        android:id="@+id/lbl_Phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:background="@color/transparent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="@string/lbl_phone"
+                        android:textColor="@color/text_color_primary"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textStyle="bold" />
+
+                    <com.app.hotgo.widget.MyTextView
+                        android:id="@+id/lblPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:background="@color/transparent"
+                        android:text=""
+                        android:textColor="@color/text_profile"
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/space_small"
+                android:paddingEnd="@dimen/space_small"
+                android:paddingBottom="@dimen/space_small">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_profile_email" />
+
+                <com.app.hotgo.widget.TextViewFontAwesome
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/ic_mail"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/space_small"
+                    android:weightSum="10">
+
+
+                    <com.app.hotgo.widget.MyTextView
+                        android:id="@+id/lbl_Email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="@string/lbl_email"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/text_color_primary"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textStyle="bold" />
+
+                    <com.app.hotgo.widget.MyTextView
+                        android:id="@+id/lblEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:text=""
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/text_profile"
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/space_small"
+                android:paddingEnd="@dimen/space_small"
+                android:paddingBottom="@dimen/space_small">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="13dp"
+                    android:gravity="center"
+                    android:src="@drawable/ic_profile_add" />
+
+                <com.app.hotgo.widget.TextViewFontAwesome
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="4dp"
+                    android:text="@string/ic_add"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/space_small"
+                    android:weightSum="10">
+
+
+                    <com.app.hotgo.widget.MyTextView
+                        android:id="@+id/lbl_Address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:background="@color/transparent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="@string/lbl_address"
+                        android:textColor="@color/text_color_primary"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textStyle="bold" />
+
+                    <com.app.hotgo.widget.MyTextView
+                        android:id="@+id/lblAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:background="@color/transparent"
+                        android:text=""
+                        android:textColor="@color/text_profile"
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/layout_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/space_small"
+                android:paddingEnd="@dimen/space_small"
+                android:paddingBottom="@dimen/space_small">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_profile_description" />
+
+                <com.app.hotgo.widget.TextViewFontAwesome
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="4dp"
+                    android:text="@string/ic_add"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/space_small"
+                    android:weightSum="10">
+
+                    <com.app.hotgo.widget.MyTextView
+                        android:id="@+id/lbl_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:background="@color/transparent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="@string/description"
+                        android:textColor="@color/text_color_primary"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textStyle="bold" />
+
+                    <com.app.hotgo.widget.MyTextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:background="@color/transparent"
+                        android:text=""
+                        android:textColor="@color/text_profile"
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_vehicle_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/space_small"
+                android:paddingEnd="@dimen/space_small"
+                android:paddingBottom="@dimen/space_small">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:gravity="center"
+                    android:padding="1.5dp"
+                    android:src="@drawable/ic_profile_vehicle" />
+
+                <com.app.hotgo.widget.TextViewFontAwesome
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="4dp"
+                    android:text="@string/ic_add"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/space_small"
+                    android:weightSum="10">
+
+
+                    <com.app.hotgo.widget.MyTextView
+                        android:id="@+id/lbl_vehicle_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:layout_marginLeft="4dp"
+                        android:text="@string/vehicle_info"
+                        android:textColor="@color/text_color_primary"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_1x"
+                        android:layout_marginLeft="4dp"
+                        android:orientation="vertical">
+
+                        <com.app.hotgo.widget.MyTextView
+                            android:id="@+id/tv_type_vehicle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Loại Xe : HONDA"
+                            android:textColor="@color/text_profile" />
+
+                        <com.app.hotgo.widget.MyTextView
+                            android:id="@+id/tv_vehicle_plate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_nano"
+                            android:text="Biển số : 22s2 22222"
+                            android:textColor="@color/text_profile" />
+
+                        <com.app.hotgo.widget.MyTextView
+                            android:id="@+id/tv_vehicle_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/space_nano"
+                            android:background="@color/transparent"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:text="@string/vehicle_image"
+                            android:textColor="@color/text_profile"
+                            android:textSize="@dimen/text_size_normal" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/space_small"
+                android:paddingEnd="@dimen/space_small"
+                android:paddingBottom="@dimen/space_small">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_profile_description" />
+
+                <com.app.hotgo.widget.TextViewFontAwesome
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="4dp"
+                    android:text="@string/ic_add"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/layout_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/space_small"
+                    android:layout_marginLeft="4dp"
+                    android:orientation="horizontal">
+
+                    <com.app.hotgo.widget.SquareImageView
+                        android:id="@+id/imgPhotoOne"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/margin_horizontal"
+                        android:background="@drawable/bg_border_gray"
+                        android:contentDescription="@string/content_description"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_upload"
+                        app:sriv_left_bottom_corner_radius="5dp"
+                        app:sriv_left_top_corner_radius="5dp"
+                        app:sriv_right_bottom_corner_radius="5dp"
+                        app:sriv_right_top_corner_radius="5dp" />
+
+                    <com.app.hotgo.widget.SquareImageView
+                        android:id="@+id/imgPhotoTwo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/space_small"
+                        android:layout_marginTop="@dimen/margin_horizontal"
+                        android:background="@drawable/bg_border_gray"
+                        android:contentDescription="@string/content_description"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_upload"
+                        app:sriv_left_bottom_corner_radius="5dp"
+                        app:sriv_left_top_corner_radius="5dp"
+                        app:sriv_right_bottom_corner_radius="5dp"
+                        app:sriv_right_top_corner_radius="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <com.app.hotgo.widget.MyTextView
+                android:id="@+id/btnUpdate"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space_tiny"
+                android:background="@color/from"
+                android:gravity="center"
+                android:text="@string/lbl_update_profile"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

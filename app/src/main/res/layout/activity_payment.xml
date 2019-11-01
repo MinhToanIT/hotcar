@@ -1,0 +1,183 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_header_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_small"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/space_tiny"
+        android:paddingRight="@dimen/space_small">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_tiny">
+
+            <com.app.hotgo.widget.TextViewFontAwesome
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/space_tiny"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:text="@string/ic_blance"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_large" />
+
+            <com.app.hotgo.widget.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical"
+                android:text="@string/lbl_your_balance"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_large" />
+
+            <!--<hcpttaxinear.widget.TextViewRaleway-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center"-->
+            <!--android:text=" (points)"-->
+            <!--android:textColor="@color/text_hint"-->
+            <!--android:textSize="@dimen/text_size_normal" />-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.app.hotgo.widget.MyTextView
+        android:id="@+id/lblBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_xlarge"
+        android:background="@color/transparent"
+        android:gravity="center_vertical|right"
+        android:text="3000"
+        android:textColor="@color/text_color_primary"
+        android:textSize="@dimen/text_size_header"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_nano"
+        android:layout_marginTop="@dimen/space_small"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/space_tiny"
+        android:paddingRight="@dimen/space_small">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_tiny">
+
+            <com.app.hotgo.widget.TextViewFontAwesome
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/ic_money"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_large" />
+
+            <com.app.hotgo.widget.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_tiny"
+                android:gravity="center_vertical"
+                android:text="@string/amount"
+                android:textColor="@color/text_color_primary"
+                android:textSize="@dimen/text_size_large" />
+
+            <!--<hcpttaxinear.widget.TextViewRaleway-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text=" (points)"-->
+            <!--android:textColor="@color/text_hint"-->
+            <!--android:textSize="@dimen/text_size_normal" />-->
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_xlarge"
+        android:layout_marginRight="@dimen/space_xlarge"
+        android:background="@drawable/bg_textbox_white"
+        android:gravity="center_vertical|left"
+        android:hint="0"
+        android:inputType="number"
+        android:padding="@dimen/padding_vertical"
+        android:textColor="@color/text_color_primary"
+        android:textColorHint="@color/text_color_primary"
+        android:textSize="@dimen/text_size_normal" />
+
+    <LinearLayout
+        android:id="@+id/btnPayment"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/height_header"
+        android:layout_marginLeft="39dp"
+        android:layout_marginRight="@dimen/margin_horizontal_xxlarge"
+        android:layout_gravity=""
+        android:layout_marginTop="@dimen/space_normal"
+        android:background="@drawable/bg_paypal_two"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.app.hotgo.widget.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_small"
+            android:text="Pay via"
+            android:textColor="@color/bluer_text"
+            android:textSize="@dimen/text_size_xlarge"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:layout_width="@dimen/size_paypal"
+            android:layout_height="@dimen/margin_vertical_large"
+            android:src="@drawable/paypal_logo_new" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnStripe"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/height_header"
+        android:layout_marginLeft="39dp"
+        android:layout_marginRight="@dimen/margin_horizontal_xxlarge"
+        android:layout_marginTop="@dimen/space_normal"
+        android:background="@drawable/bg_paypal_two"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_stripe" />
+    </LinearLayout>
+
+    <com.app.hotgo.widget.MyTextView
+        android:id="@+id/lbl_Error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_vertical_large"
+        android:layout_marginLeft="@dimen/margin_horizontal_large"
+        android:layout_marginRight="@dimen/margin_horizontal_large"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/text_color_primary"
+        android:textSize="@dimen/text_size_large" />
+
+</LinearLayout>

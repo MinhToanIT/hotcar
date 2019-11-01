@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llTypeCar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen_2x"
+    android:layout_marginRight="@dimen/dimen_2x"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dimen_1x"
+    android:paddingBottom="@dimen/dimen_05x">
+
+    <ImageView
+        android:id="@+id/iv_product_thumbnail"
+        android:layout_width="@dimen/dimen_6x"
+        android:layout_height="@dimen/dimen_6x"
+        android:src="@drawable/ic_avartar" />
+
+    <com.app.hotgo.widget.MyTextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view"
+        android:layout_marginTop="@dimen/dimen_05x"
+        android:singleLine="true"
+        android:textColor="@color/text_color_primary"
+        android:textSize="@dimen/text_size_normal" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/text_color_primary"
+        android:visibility="gone" />
+</LinearLayout>
